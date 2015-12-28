@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from article.models import Article
 from datetime import datetime
 # Create your views here.
+#i'm nothing,just test the use of git
 def home(request):
     post_list = Article.objects.all()
     return render(request,'home.html',{'post_list':post_list})
